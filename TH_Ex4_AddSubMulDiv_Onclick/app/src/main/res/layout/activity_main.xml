@@ -24,7 +24,8 @@
         <EditText
             android:id="@+id/edtA"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +44,8 @@
         <EditText
             android:id="@+id/edtB"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
     </LinearLayout>
 
     <LinearLayout
@@ -57,25 +59,29 @@
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"/>
+            android:text="+"
+            android:onClick="XuLyCong"/>
         <Button
             android:id="@+id/btnTru"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"/>
+            android:text="-"
+            android:onClick="XuLyTru"/>
         <Button
             android:id="@+id/btnNhan"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="x"/>
+            android:text="x"
+            android:onClick="XuLyNhan"/>
         <Button
             android:id="@+id/btnChia"
             android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="/"/>
+            android:text="/"
+            android:onClick="XuLyChia"/>
     </LinearLayout>
 
     <LinearLayout
@@ -95,7 +101,8 @@
             android:id="@+id/edtKQ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:enabled="false"/>
+            android:enabled="false"
+            android:inputType="number"/>
     </LinearLayout>
 
 </LinearLayout>
