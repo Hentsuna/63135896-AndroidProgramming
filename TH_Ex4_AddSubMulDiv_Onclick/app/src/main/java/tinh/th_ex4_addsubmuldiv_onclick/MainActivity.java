@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        //Gắn bộ lắng nghe sự kiện
+        nutCong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                XuLyCong();
+            }
+        });
     }
 
     void TimDieuKhien(){
@@ -42,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //Hàm xử lý cộng
-    public void XuLyCong(View v){
+    public void XuLyCong(){
         float strA =  Float.parseFloat(soA.getText().toString());
         float strB =  Float.parseFloat(soB.getText().toString());
         float tong = strA + strB;
