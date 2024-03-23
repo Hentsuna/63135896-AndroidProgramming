@@ -12,6 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -62,30 +63,53 @@ public class MainActivity extends AppCompatActivity {
         int s2 = Integer.parseInt(so2.getText().toString());
         int tong = s1 + s2;
         String chuoikq = String.valueOf(tong);
+//        int[] arr = new int[4];
+//        int dapan = rand.nextInt(4);
+//        arr[dapan] = tong;
+//        for (int i = 1; i < arr.length; i++) {
+//            if(i == dapan) continue;
+//            int rnd = rand.nextInt(20);
+//            if (Arrays.asList(arr).contains(rnd)) rnd = rand.nextInt(20);
+//            arr[i] = rand.nextInt(20);
+//
+//        }
+//        for (int i = 0; i < 4; i++) {
+//            switch (i)
+//            {
+//                case 0: nutA.setText(arr[i]); break;
+//                case 1: nutB.setText(arr[i]); break;
+//                case 2: nutC.setText(arr[i]); break;
+//                case 3: nutD.setText(arr[i]);break;
+//            }
+//        }
+        int a,b,c;
+        a = rand.nextInt(20);
+        b = rand.nextInt(20);
+        c = rand.nextInt(20);
         switch (rand.nextInt(4)){
             case 0:
                 nutA.setText(chuoikq);
-                nutB.setText(rand.nextInt(20));
-                nutC.setText(rand.nextInt(20));
-                nutD.setText(rand.nextInt(20));
+                nutB.setText(String.valueOf(a));
+                nutC.setText(String.valueOf(c));
+                nutD.setText(String.valueOf(b));
                 break;
             case 1:
                 nutB.setText(chuoikq);
-                nutC.setText(rand.nextInt(20));
-                nutD.setText(rand.nextInt(20));
-                nutA.setText(rand.nextInt(20));
+                nutC.setText(String.valueOf(a));
+                nutD.setText(String.valueOf(b));
+                nutA.setText(String.valueOf(c));
                 break;
             case 2:
                 nutC.setText(chuoikq);
-                nutB.setText(rand.nextInt(20));
-                nutD.setText(rand.nextInt(20));
-                nutA.setText(rand.nextInt(20));
+                nutB.setText(String.valueOf(a));
+                nutD.setText(String.valueOf(b));
+                nutA.setText(String.valueOf(c));
                 break;
             case 3:
                 nutD.setText(chuoikq);
-                nutB.setText(rand.nextInt(20));
-                nutC.setText(rand.nextInt(20));
-                nutA.setText(rand.nextInt(20));
+                nutB.setText(String.valueOf(a));
+                nutC.setText(String.valueOf(b));
+                nutA.setText(String.valueOf(c));
                 break;
         }
 
