@@ -74,7 +74,9 @@ public class ManHinhChinh extends JFrame {
 		btnA.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
+				//Lấy giá trị độ dài độ rộng
+				int soA = Integer.parseInt(txt1.getText());
+				int soB = Integer.parseInt(txt2.getText());
 				
 			}
 			
