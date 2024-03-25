@@ -1,6 +1,7 @@
 package ntu_63135896.cau2;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -31,6 +32,20 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         TimDieuKhien();
+        nutKq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(nutA.isChecked()){
+                    DiBo();
+                }
+                if(nutB.isChecked()){
+                    XeDap();
+                }
+                if (nutC.isChecked()){
+                    Oto();
+                }
+            }
+        });
     }
 
     void TimDieuKhien(){
