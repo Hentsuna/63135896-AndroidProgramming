@@ -1,6 +1,10 @@
 package ntu_63135896.cau2;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +13,12 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    EditText soKm;
+    EditText soGio;
+    EditText soBuoc;
+    RadioGroup nutGroup;
+    RadioButton nutA, nutB, nutC;
+    Button nutKq;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
