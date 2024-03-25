@@ -16,5 +16,25 @@
         android:gravity="center"
         android:padding="30dp"
         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số km:"
+            android:textSize="20dp"
+            android:paddingRight="40dp"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:id="@+id/edtkm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>
