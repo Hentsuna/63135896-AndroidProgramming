@@ -69,6 +69,13 @@
             android:textSize="20dp"
             android:layout_marginLeft="20dp"/>
     </RadioGroup>
-
+    <Button
+        android:id="@+id/btnkq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết Quả"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_margin="50dp"/>
 
 </LinearLayout>
