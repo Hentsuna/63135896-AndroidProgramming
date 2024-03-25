@@ -77,5 +77,48 @@
         android:gravity="center"
         android:textSize="30dp"
         android:layout_margin="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số phút:"
+            android:textSize="20dp"
+            android:paddingRight="40dp"
+            />
+
+        <EditText
+            android:id="@+id/edth"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số bước chân:"
+            android:textSize="20dp"
+            android:paddingRight="40dp"
+            />
+
+        <EditText
+            android:id="@+id/edtb"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
 </LinearLayout>
