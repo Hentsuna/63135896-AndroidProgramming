@@ -4,6 +4,7 @@ import java.awt.EventQueue;
 import java.awt.Font;
 
 import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -66,6 +67,11 @@ public class ManHinhChinh extends JFrame {
 		txt2.setColumns(10);
 		txt2.setBounds(102, 98, 96, 20);
 		contentPane.add(txt2);
+		
+		JButton btnA = new JButton("Vẽ");
+		btnA.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnA.setBounds(288, 60, 103, 43);
+		contentPane.add(btnA);
 	}
 
 }
