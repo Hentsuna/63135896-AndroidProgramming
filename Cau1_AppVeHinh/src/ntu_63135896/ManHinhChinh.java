@@ -53,22 +53,22 @@ public class ManHinhChinh extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Độ dài:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel.setBounds(36, 56, 56, 24);
+		lblNewLabel.setBounds(36, 46, 56, 24);
 		contentPane.add(lblNewLabel);
 		
 		txt1 = new JTextField();
-		txt1.setBounds(102, 60, 96, 20);
+		txt1.setBounds(102, 50, 96, 20);
 		contentPane.add(txt1);
 		txt1.setColumns(10);
 		
 		JLabel lblRng = new JLabel("Độ rộng:");
 		lblRng.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblRng.setBounds(36, 91, 81, 30);
+		lblRng.setBounds(25, 73, 81, 30);
 		contentPane.add(lblRng);
 		
 		txt2 = new JTextField();
 		txt2.setColumns(10);
-		txt2.setBounds(102, 98, 96, 20);
+		txt2.setBounds(102, 81, 96, 20);
 		contentPane.add(txt2);
 		
 		JButton btnA = new JButton("Vẽ");
@@ -101,7 +101,7 @@ public class ManHinhChinh extends JFrame {
 		contentPane.add(btnA);
 		
 		JLabel lblNewLabel_1 = new JLabel("Ghi chú: Độ dài, rộng 50 bằng 1cm");
-		lblNewLabel_1.setBounds(244, 50, 171, 14);
+		lblNewLabel_1.setBounds(25, 108, 233, 24);
 		contentPane.add(lblNewLabel_1);
 	}
 }
