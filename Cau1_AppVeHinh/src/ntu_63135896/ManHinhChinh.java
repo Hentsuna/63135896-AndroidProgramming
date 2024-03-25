@@ -80,6 +80,8 @@ public class ManHinhChinh extends JFrame {
 				int soB = Integer.parseInt(txt2.getText());
 				//class để vẽ hình học
 				Graphics g = contentPane.getGraphics();
+				//Xoá hình cũ khi vẽ hình mới
+				g.clearRect(130, 130, 500, 500);
 				//Xử lí chọn vẽ hình nào
 				if(nutA.isSelected()) {
 					g.drawRect(150, 150, soA, soB);
