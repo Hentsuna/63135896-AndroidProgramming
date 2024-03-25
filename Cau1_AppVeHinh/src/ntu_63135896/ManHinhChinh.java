@@ -2,6 +2,7 @@ package ntu_63135896;
 
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -77,6 +78,18 @@ public class ManHinhChinh extends JFrame {
 				//Lấy giá trị độ dài độ rộng
 				int soA = Integer.parseInt(txt1.getText());
 				int soB = Integer.parseInt(txt2.getText());
+				//class để vẽ hình học
+				Graphics g = contentPane.getGraphics();
+				//Xử lí chọn vẽ hình nào
+				if(nutA.isSelected()) {
+					g.drawRect(150, 150, soA, soB);
+				}
+				if(nutB.isSelected() && soA == soB) {
+					g.drawOval(150, 150, soA, soB);
+				}
+				if(nutC.isSelected()){
+					g.drawOval(150, 150, soA, soB);
+				}
 				
 			}
 			
