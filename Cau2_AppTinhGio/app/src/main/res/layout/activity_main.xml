@@ -36,5 +36,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phương tiện"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <RadioGroup
+        android:id="@+id/btnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btnA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đi bộ"
+            android:textSize="20dp"
+            android:layout_marginLeft="60dp"/>
+        <RadioButton
+            android:id="@+id/btnB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xe đạp"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+        <RadioButton
+            android:id="@+id/btnC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ô tô"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+
 
 </LinearLayout>
