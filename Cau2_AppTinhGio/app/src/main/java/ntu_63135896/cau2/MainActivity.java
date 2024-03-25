@@ -64,4 +64,46 @@ public class MainActivity extends AppCompatActivity {
             soBuoc.setText(soB);
         }
     }
+
+    //Tính xe đạp
+    public void XeDap(){
+        double Km = Double.parseDouble(soKm.getText().toString());
+        double time = Km/15;
+        double buoc = time * 60 * 80;
+        buoc = Math.round(buoc);
+        String soB = String.valueOf(buoc);
+        if(time < 1){
+            time *= 60;
+            time = Math.round(time);
+            String soH = time + " phút";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }else {
+            time = Math.round(time);
+            String soH = time + " giờ";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }
+    }
+
+    //Tính đi bộ
+    public void DiBo(){
+        double Km = Double.parseDouble(soKm.getText().toString());
+        double time = Km/5;
+        double buoc = time * 60 * 80;
+        buoc = Math.round(buoc);
+        String soB = String.valueOf(buoc);
+        if(time < 1){
+            time *= 60;
+            time = Math.round(time);
+            String soH = time + " phút";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }else {
+            time = Math.round(time);
+            String soH = time + " giờ";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }
+    }
 }
