@@ -78,15 +78,15 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="15dp"
             android:textColor="@color/white"
-            android:text="Họ và tên:"
+            android:text="MSSV:"
             android:textSize="30dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="65dp"
             android:textColor="@color/white"
-            android:text="Đàm Viết Trọng"
+            android:text="63135896"
             android:textSize="30dp"
             />
     </LinearLayout>
