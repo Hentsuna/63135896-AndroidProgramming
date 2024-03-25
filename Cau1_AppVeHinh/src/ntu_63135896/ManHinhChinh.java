@@ -1,17 +1,22 @@
 package ntu_63135896;
 
 import java.awt.EventQueue;
+import java.awt.Font;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 public class ManHinhChinh extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
+	private JTextField txt1;
+	private JTextField txt2;
 	private final ButtonGroup b = new ButtonGroup();
 	
 
@@ -25,6 +30,7 @@ public class ManHinhChinh extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
 		
 		JRadioButton nutA = new JRadioButton("Hình vuông");
 		b.add(nutA);
@@ -40,6 +46,26 @@ public class ManHinhChinh extends JFrame {
 		b.add(nutC);
 		nutC.setBounds(267, 5, 86, 33);
 		contentPane.add(nutC);
+		
+		JLabel lblNewLabel = new JLabel("Độ dài:");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblNewLabel.setBounds(36, 56, 56, 24);
+		contentPane.add(lblNewLabel);
+		
+		txt1 = new JTextField();
+		txt1.setBounds(102, 60, 96, 20);
+		contentPane.add(txt1);
+		txt1.setColumns(10);
+		
+		JLabel lblRng = new JLabel("Độ rộng:");
+		lblRng.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblRng.setBounds(36, 91, 81, 30);
+		contentPane.add(lblRng);
+		
+		txt2 = new JTextField();
+		txt2.setColumns(10);
+		txt2.setBounds(102, 98, 96, 20);
+		contentPane.add(txt2);
 	}
 
 }
