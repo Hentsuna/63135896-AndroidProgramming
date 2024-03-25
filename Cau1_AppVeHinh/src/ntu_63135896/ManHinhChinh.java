@@ -2,6 +2,8 @@ package ntu_63135896;
 
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -69,6 +71,14 @@ public class ManHinhChinh extends JFrame {
 		contentPane.add(txt2);
 		
 		JButton btnA = new JButton("Vẽ");
+		btnA.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
 		btnA.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnA.setBounds(288, 60, 103, 43);
 		contentPane.add(btnA);
