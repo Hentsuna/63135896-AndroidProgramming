@@ -30,5 +30,17 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        TimDieuKhien();
+    }
+
+    void TimDieuKhien(){
+        soKm = findViewById(R.id.edtkm);
+        soGio = findViewById(R.id.edth);
+        soBuoc = findViewById(R.id.edtb);
+        nutA = findViewById(R.id.btnA);
+        nutB = findViewById(R.id.btnB);
+        nutC = findViewById(R.id.btnC);
+        nutKq = findViewById(R.id.btnkq);
+        nutGroup = findViewById(R.id.btnGroup);
     }
 }
