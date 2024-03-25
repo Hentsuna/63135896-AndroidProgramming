@@ -97,8 +97,11 @@ public class ManHinhChinh extends JFrame {
 			
 		});
 		btnA.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnA.setBounds(288, 60, 103, 43);
+		btnA.setBounds(287, 78, 103, 43);
 		contentPane.add(btnA);
+		
+		JLabel lblNewLabel_1 = new JLabel("Ghi chú: Độ dài, rộng 50 bằng 1cm");
+		lblNewLabel_1.setBounds(244, 50, 171, 14);
+		contentPane.add(lblNewLabel_1);
 	}
-
 }
