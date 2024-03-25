@@ -18,4 +18,11 @@
         android:layout_marginTop="40dp"
         android:textColor="@color/white"/>
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        app:srcCompat="@mipmap/anhbt"
+        android:layout_marginTop="30dp"/>
+
 </LinearLayout>
