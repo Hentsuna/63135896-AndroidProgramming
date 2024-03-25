@@ -43,4 +43,25 @@ public class MainActivity extends AppCompatActivity {
         nutKq = findViewById(R.id.btnkq);
         nutGroup = findViewById(R.id.btnGroup);
     }
+
+    //Tính xe oto
+    public void Oto(){
+        double Km = Double.parseDouble(soKm.getText().toString());
+        double time = Km/50;
+        double buoc = time * 60 * 80;
+        buoc = Math.round(buoc);
+        String soB = String.valueOf(buoc);
+        if(time < 1){
+            time *= 60;
+            time = Math.round(time);
+            String soH = time + " phút";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }else {
+            time = Math.round(time);
+            String soH = time + " giờ";
+            soGio.setText(soH);
+            soBuoc.setText(soB);
+        }
+    }
 }
