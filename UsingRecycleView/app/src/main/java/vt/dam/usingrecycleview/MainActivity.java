@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         //5
         RecyclerView.LayoutManager layoutLinear = new LinearLayoutManager(this);
         recyclerViewLandscape.setLayoutManager(layoutLinear);
+        //RecyclerView.LayoutManager layoutLinearHorizonal = new LinearLayoutManager(this);
+        //        recyclerViewLandscape.setLayoutManager(layoutLinear);
         //6
         landScapeAdapter = new LandScapeAdapter(this, recyclerViewDatas);
         //7
