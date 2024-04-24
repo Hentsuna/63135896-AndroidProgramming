@@ -3,6 +3,7 @@ package vt.dam.th_intentsimple_vidu1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    Button nutTrangChu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +24,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        nutTrangChu = findViewById(R.id.btnTrangChu);
+        nutTrangChu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ChuyenManHinh();
+            }
+        });
     }
 
-    public void ChuyenManHInh(View v){
+    public void ChuyenManHinh(){
         Intent iManHinhKhac = new Intent(this, SubActivityOne.class);
         startActivity(iManHinhKhac);
     }
