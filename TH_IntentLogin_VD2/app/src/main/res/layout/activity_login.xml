@@ -44,7 +44,7 @@
             android:id="@+id/edtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="23dp"
+            android:layout_marginLeft="23dp"/>
     </LinearLayout>
 
     <LinearLayout
