@@ -29,7 +29,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
         android:orientation="horizontal">
@@ -44,12 +44,13 @@
             android:id="@+id/edtUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="23dp"/>
+            android:layout_marginLeft="23dp"
+            android:textSize="30dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
         android:orientation="horizontal">
@@ -65,12 +66,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="23dp"
+            android:textSize="30dp"
             android:inputType="numberPassword"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         android:padding="5dp"
         android:orientation="horizontal">
@@ -86,6 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="23dp"
+            android:textSize="30dp"
             android:inputType="textEmailAddress"/>
     </LinearLayout>
 
