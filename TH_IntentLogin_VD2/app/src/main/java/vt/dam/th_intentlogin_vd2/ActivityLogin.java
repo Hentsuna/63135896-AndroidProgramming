@@ -47,9 +47,11 @@ public class ActivityLogin extends AppCompatActivity {
         String tenDN = ten.getText().toString();
         String matKhauDN = matKhau.getText().toString();
         String emailDN = email.getText().toString();
-        if(tenDN == "63CNTT2" || matKhauDN == "123456"){
-            Intent iHome = new Intent(this, ActivityHome.class);
-            startActivity(iHome);
+
+        if(tenDN.equals("63CNTT2") && matKhauDN.equals("123456") && emailDN.equals("trong@gmail.com")){
+            Intent iQuiz = new Intent(this, ActivityHome.class);
+            iQuiz.putExtra("name_key", tenDN);
+            startActivity(iQuiz);
         }else {
             Toast toast = Toast.makeText(this, "Sai thông tin đăng nhập", Toast.LENGTH_LONG);
             toast.show();

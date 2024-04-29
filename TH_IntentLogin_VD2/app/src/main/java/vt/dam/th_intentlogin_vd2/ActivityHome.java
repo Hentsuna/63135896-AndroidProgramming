@@ -1,6 +1,8 @@
 package vt.dam.th_intentlogin_vd2;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ActivityHome extends AppCompatActivity {
+    TextView hienTen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +23,7 @@ public class ActivityHome extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        hienTen = findViewById(R.id.tvUserName);
+        hienTen.setText(getIntent().getStringExtra("name_key"));
     }
 }
