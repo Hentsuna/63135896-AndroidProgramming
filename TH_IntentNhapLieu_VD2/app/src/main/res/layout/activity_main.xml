@@ -42,13 +42,13 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/edtUserName"
+            android:id="@+id/edtTenNhan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="23dp"
             android:textSize="15dp"
             android:background="#DFD3D0"
-            />
+            android:enabled="false"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,12 +67,13 @@
             android:textSize="15dp" />
 
         <EditText
-            android:id="@+id/edtUserName"
+            android:id="@+id/edtNamNhan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="23dp"
             android:textSize="15dp"
-            android:background="#E4937E"/>
+            android:background="#E4937E"
+            android:enabled="false"/>
     </LinearLayout>
 
     <ImageView
