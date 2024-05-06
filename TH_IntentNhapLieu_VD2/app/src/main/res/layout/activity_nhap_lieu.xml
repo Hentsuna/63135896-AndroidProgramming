@@ -46,7 +46,7 @@
             android:textSize="25dp" />
 
         <EditText
-            android:id="@+id/edtTenLay"
+            android:id="@+id/edtNamLay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="85dp"
