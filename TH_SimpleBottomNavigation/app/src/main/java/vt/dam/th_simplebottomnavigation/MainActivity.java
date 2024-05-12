@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -28,4 +29,22 @@ public class MainActivity extends AppCompatActivity {
         //Fragment show đầu tiên
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AlgorithmFragment()).commit();
     }
+
+    private final BottomNavigationView.OnNavigationItemSelectedListener navLisnener = item ->{
+        //Sử dụng switch để lấy đc fragment thông qua id
+        Fragment selectedFragment = null;
+        int itemId = item.getItemId();
+        if (itemId == R.id.algorithm)
+            selectedFragment = new AlgorithmFragment();
+        else if (itemId == R.id.course) {
+            selectedFragment = new CourseFragment();
+        } else if (itemId == R.id.profile) {
+            selectedFragment = new ProfileFragment();
+        }
+
+        //Thay thế fragment này với fragment khác
+        if (selectedFragment != null)
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+        return true;
+    };
 }
