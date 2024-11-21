@@ -65,6 +65,7 @@ public class Cau3Fragment extends Fragment {
         list.add(new LandScape("electric", "Chiêu thức điện"));
         list.add(new LandScape("water", "Chiêu thức nước"));
         list.add(new LandScape("grass", "Chiêu thức cỏ"));
+        list.add(new LandScape("kafka", "Nhân vật Kafka"));
     }
 
     @Override

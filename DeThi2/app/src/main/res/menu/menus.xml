@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_welcome"
+        android:icon="@mipmap/home"
+        android:title="Cau 1" />
+    <item
+        android:id="@+id/nav_unit"
+        android:icon="@mipmap/star"
+        android:title="Câu 2" />
+    <item
+        android:id="@+id/nav_welknown"
+        android:icon="@mipmap/star"
+        android:title="Câu 3" />
+    <item
+        android:id="@+id/nav_subject"
+        android:icon="@mipmap/star"
+        android:title="Câu 4" />
+    <item
+        android:id="@+id/nav_mycv"
+        android:icon="@mipmap/people"
+        android:title="Câu 5" />
+</menu>
