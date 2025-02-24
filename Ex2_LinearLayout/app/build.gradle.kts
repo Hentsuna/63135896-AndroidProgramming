@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "th.hentsun.ex2_linearlayout"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "th.hentsun.ex2_linearlayout"
