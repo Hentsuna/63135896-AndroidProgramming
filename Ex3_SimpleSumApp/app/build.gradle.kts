@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "th.hentsun.ex3_simplesumapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "th.hentsun.ex3_simplesumapp"
