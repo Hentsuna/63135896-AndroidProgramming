@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -62,30 +62,56 @@
             android:inputType="text"
             android:hint="Nhập B" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button2"
+        <Button
+            android:id="@+id/button"
+            android:layout_gravity="left"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Cộng"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Trừ"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button3"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Nhân"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textSize="20dp"/>
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Chia"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,7 +131,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text"
-            android:hint="Kết quả"
+            android:hint="Kết quả:"
             android:focusable="false"/>
     </LinearLayout>
 </LinearLayout>
