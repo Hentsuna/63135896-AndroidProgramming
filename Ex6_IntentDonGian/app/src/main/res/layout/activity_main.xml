@@ -24,6 +24,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SÓI BẠC (SILVER WOLF)"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/silver_bg"
+        android:textColor="@color/white"
         android:textSize="25dp"/>
 
     <Button
@@ -31,7 +34,10 @@
         android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/firefly_bg"
         android:text="FIRE FLY"
+        android:textColor="@color/white"
         android:textSize="25dp"/>
 
     <ImageView
