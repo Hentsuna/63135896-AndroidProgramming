@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         ff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentff = new Intent(MainActivity.this, FFActivity2.class);
+                Intent intentff = new Intent(MainActivity.this, FFActivity.class);
                 startActivity(intentff);
             }
         });
