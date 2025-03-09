@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "th.hentsun.ex6_intentdongian"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "th.hentsun.ex6_intentdongian"
