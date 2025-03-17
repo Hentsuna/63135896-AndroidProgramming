@@ -22,7 +22,6 @@
             android:textColor="@color/lavender"
             android:layout_marginStart="18dp"
             android:layout_marginTop="40dp"
-            android:fontFamily="@font/poppins_semibold"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/amazonImage"/>
@@ -81,7 +80,6 @@
                         android:text="Clothing"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/clothingImage"/>
@@ -116,7 +114,6 @@
                         android:text="Electronics"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/elecImage"/>
@@ -164,7 +161,6 @@
                         android:text="Home"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/homeImage"/>
@@ -199,7 +195,6 @@
                         android:text="Beauty"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-                        android:fontFamily="@font/poppins_semibold"
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/beautyImage"/>
@@ -247,7 +242,6 @@
                         android:text="Pharmacy"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-                        android:fontFamily=""
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/pharmImage"/>
@@ -282,7 +276,6 @@
                         android:text="Groceries"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
-
                         android:layout_marginTop="10dp"
                         android:layout_centerHorizontal="true"
                         android:layout_below="@+id/grocImage"/>
