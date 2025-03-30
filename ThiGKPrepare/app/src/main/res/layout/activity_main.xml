@@ -9,16 +9,17 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
-    <!-- Ảnh nền -->
+
     <ImageView
-        android:id="@+id/bannerImage"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:id="@+id/avatar"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:src="@drawable/profile_banner"/>
+        android:src="@drawable/takagi"
+        android:background="@drawable/circle_background"
+        android:clipToOutline="true"/>
 
     <!-- Thông tin cá nhân -->
     <androidx.cardview.widget.CardView
@@ -45,47 +46,83 @@
                 android:textColor="@color/lavender"/>
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thông tin chi tiết"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Thông tin"
+                android:gravity="center"
                 android:id="@+id/info"
-                android:textSize="20sp"
+                android:textSize="25sp"
+
+                android:textStyle="bold"
+                android:textColor="@color/purple"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text="MSSV: 63135896"
+                android:id="@+id/phone"
+                android:textSize="25sp"
                 android:textAlignment="textStart"
                 android:textStyle="bold"
                 android:textColor="@color/purple"/>
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/username"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:drawablePadding="8dp"
-                android:hint="Username"
-                android:padding="8dp"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="40dp"/>
-            <EditText
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Lớp: 63.CNTT_1"
+                android:id="@+id/phone"
+                android:textSize="25sp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/purple"/>
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/password"
-                android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/ic_baseline_lock_24"
-                android:drawablePadding="8dp"
-                android:hint="Password"
-                android:padding="8dp"
-                android:inputType="textPassword"
-                android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="20dp"/>
-            <Button
+                android:layout_height="1dp"
+                android:background="#BDBDBD"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/loginButton"
-                android:text="Login"
-                android:textSize="18sp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="@color/purple"
-                app:cornerRadius = "20dp"/>
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text=" 25 tháng 11, 2003"
+                android:id="@+id/date"
+                android:textSize="25sp"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/purple"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text=" +84 395 014 947"
+                android:id="@+id/phone"
+                android:textSize="25sp"
+                android:drawableLeft="@drawable/baseline_local_phone_24"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/purple"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:text=" trong.dv.63cntt@gmail.com"
+                android:id="@+id/phone"
+                android:textSize="25sp"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/purple"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
