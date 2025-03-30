@@ -1,9 +1,11 @@
 package th.hentsun.thigkprepare;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Cau1Activity extends AppCompatActivity {
     EditText txt1, txt2, txt3;
     Button btn1, btn2, btn3, btn4;
+    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,7 @@ public class Cau1Activity extends AppCompatActivity {
         btn2 = findViewById(R.id.button2);
         btn3 = findViewById(R.id.button3);
         btn4 = findViewById(R.id.button4);
+        home = findViewById(R.id.home);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +53,13 @@ public class Cau1Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Chia();
+            }
+        });
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent home = new Intent(Cau1Activity.this, MainActivity.class);
+                startActivity(home);
             }
         });
 

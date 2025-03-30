@@ -9,9 +9,15 @@
     android:background="@drawable/bg"
     tools:context=".Cau1Activity">
 
+    <ImageView
+        android:id="@+id/home"
+        android:layout_marginTop="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/baseline_home_24" />
+
     <TextView
         android:id="@+id/textView"
-        android:layout_marginTop="50dp"
         android:padding="15dp"
         android:textSize="30dp"
         android:layout_gravity="center"
@@ -23,7 +29,7 @@
         android:background="@drawable/custom_edittext"/>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
@@ -94,7 +100,7 @@
                 <Button
                     android:id="@+id/button1"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/lavender"
                     android:textSize="20sp"
@@ -103,7 +109,7 @@
                 <Button
                     android:id="@+id/button2"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="@color/lavender"
                     android:textSize="20sp"
                     android:layout_weight="1"
@@ -118,7 +124,7 @@
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="@color/lavender"
                     android:textSize="20sp"
                     android:layout_weight="1"
@@ -127,7 +133,7 @@
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="0dp"
-                    android:layout_height="100dp"
+                    android:layout_height="70dp"
                     android:backgroundTint="@color/lavender"
                     android:textSize="20sp"
                     android:layout_weight="1"
