@@ -40,10 +40,11 @@ public class Cau3Activity extends AppCompatActivity {
 
         // Tạo danh sách dữ liệu
         List<Item> itemList = new ArrayList<>();
-        itemList.add(new Item("Bài hát yêu thích", R.drawable.baseline_music_note_24));
-        itemList.add(new Item("Môn học đã học", R.drawable.baseline_book_24));
-        itemList.add(new Item("Sách yêu thích", R.drawable.baseline_local_library_24));
-        itemList.add(new Item("Bộ phim hay nhất", R.drawable.baseline_movie_24));
+        itemList.add(new Item("Solo Leveling", R.mipmap.duocsutusu2));
+        itemList.add(new Item("Dược Sư Tự Sự", R.drawable.baseline_book_24));
+        itemList.add(new Item("One Piece", R.drawable.baseline_local_library_24));
+        itemList.add(new Item("Shangri-La Frontier", R.drawable.baseline_movie_24));
+        itemList.add(new Item("Detective Conan", R.drawable.baseline_movie_24));
 
         // Gán Adapter cho RecyclerView
         ItemAdapter adapter = new ItemAdapter(this, itemList);

@@ -39,10 +39,11 @@ public class Cau2Activity extends AppCompatActivity {
 
         // 1. Tạo danh sách dữ liệu
         ArrayList<String> items = new ArrayList<>();
-        items.add("Bài hát yêu thích");
-        items.add("Môn học đã học");
-        items.add("Sách yêu thích");
-        items.add("Bộ phim hay nhất");
+        items.add("Solo Leveling");
+        items.add("Dược Sư Tự Sự");
+        items.add("One Piece");
+        items.add("Shangri-La Frontier");
+        items.add("Detective Conan");
 
         // 2. Gán dữ liệu vào Adapter
         ListView listView = findViewById(R.id.listView);
