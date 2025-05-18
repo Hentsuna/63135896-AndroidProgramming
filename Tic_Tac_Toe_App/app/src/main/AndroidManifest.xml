@@ -16,10 +16,10 @@
             android:name=".ResultDialog"
             android:exported="false" />
         <activity
-            android:name=".AddPlayer"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AddPlayers"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
